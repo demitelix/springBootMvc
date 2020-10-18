@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<title>Form page</title>
+</head>
+<body>
+	<form method="post" th:action="@{/found}" th:object="${driver}">
+		<label for="name">Enter name: </label> 
+		<input type="text" th:field="*{name}" id="name" />
+		<button type="submit">ok</button>
+	</form>
+	<a href="/">Back</a>
+	<br />
+	<h4 th:text="${error}"></h4>
+	<br />
+
+</body>
+</html>

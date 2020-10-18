@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head><title>After find form</title></head>
+<body>
+	<h3>Storage result:</h3>
+	<table>
+	<tr th:each="driver: ${list}">
+    <td th:text="${driver.id}" />
+    <td th:text="${driver.name}" />
+	</table>
+	<br/>
+	<a href="/">Back</a>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Edit Form</title>
+</head>
+<body>
+<form th:method="PUT" th:action="@{/{id}(id=${driver.id})}" th:object="${driver}">
+		<label for="name">Enter name: </label> 
+		<input type="text" th:field="*{name}" id="name" />
+		<button type="submit"> Save changes </button>
+	</form>
+	<a href="/printall">Back</a>
+	<br/>	
+	<br/>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head><title>Save Form</title></head>
+<body>
+	<form method="post" th:action="@{/saveresult}" th:object="${driver}">
+		<label for="name">Enter name: </label> 
+		<input type="text" th:field="*{name}" id="name" />
+		<button type="submit"> Save </button>
+	</form>
+	<a href="/">Back</a>
+	<br/>	
+	<br/>
+	
+</body>
+</html>
